@@ -15,15 +15,26 @@ function main() {
     const choice = readlineSync.question("Choose an option: ");
 
     switch (choice) {
-        case '1':
-            console.log("File created successfully.");
-            break;
-        case '2':
-            console.log("Listing files...");
-            break;
-        case '3':
-            
-
+      case "1":
+        console.log("File created successfully.");
+        break;
+      case "2":
+        console.log("File list displayed successfully.");
+        break;
+      case "3":
+        console.log("File read successfully.");
+      case "4":
+        console.log("File written successfully.");
+        break;
+      case "5":
+        console.log("File deleted successfully.");
+        break;
+      case "6":
+        console.log("Exiting...");
+        return;
+      default:
+        console.log("Invalid choice. Please try again.");
+    }
   }
 }
 
